@@ -285,6 +285,10 @@ h1 .title{
     font-size: 20px;
 }
 /*tienda*/
+
+.title-tienda h1{
+    background-color: #F21F0C;
+}
 .contenedor_tienda{
     display: flex;
     flex-wrap: wrap;
