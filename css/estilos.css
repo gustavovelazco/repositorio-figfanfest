@@ -2,8 +2,7 @@
 /* selector universal */
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    
 }
 
 .logo{
@@ -18,56 +17,25 @@ header img{
 
 body{
     background-color:#F2B705;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .botonera{
     background-color: #242426;
+    
 }
     .botonera img{
-        width: 70px;
+        width:50%;
         margin-left: 40px;
     }
     .botonera li a{
         color: #F2B705;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: bold;
     }
 .titulo-navbar{
     color: #F2F2F2;
 }
-/*
-nav{
-    background-color: #242426;
-    padding: 30px 30px;
-    height: auto;
-    text-decoration: none;
-    top:0;
-    left: 0;
-    width: 100%;
-}
 
-    nav ul{
-        text-align: center;
-        padding: 0;
-        list-style: none;
-     }
-
-        nav ul li{ 
-            display: inline-block;
-            margin: 0 10px;
-        }
-            nav ul li a{
-                font-size: 1rem;
-                color: rgb(255, 255, 255);
-                text-decoration: none;
-                font-weight: 400;
-            }
-
-                nav ul li a:hover{
-                    color: #F21F0C;
-                    text-decoration: none;
-                }
-*/
 
 .info{
     max-width: 1400px;
@@ -173,40 +141,6 @@ nav{
     }
     
 }
-/*
-.seccionMultimedia{
-    display: flex;
-    width: auto;
-    height: 800px;
-    margin: 100px;
-}
-.seccionMultimedia img{
-    width: 50px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition:.5s ease ;
-}
-.seccionMultimedia img:hover{
-    cursor: crosshair;
-    width: 400px;
-    opacity: 1;
-    filter: contrast(120%);
-}
-
-
-
-.video{
-    background-color: #F2B705;
-    background-size: auto;
-
-}
-.video iframe{
-    margin: 60px;
-    width:1200px; 
-    height:600px;
-}
-*/
 
 /*FOOTER*/
 .pie-pagina{
@@ -333,42 +267,23 @@ nav{
 
 
 /*Partners*/
-.tarjetas{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;   
-}
-/*
-main h1{
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 60px;
+
+
+h1 .title{
+    margin-bottom: 50px;
 }
 
-.tarjeta img{
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    margin: 10px;
-    margin-bottom: 20px;
+.card img{
+    height: 400px;
+    width: 400px;
 }
-
-.tarjeta{
-    width: 300px;
-    height: auto;
-    background-color: rgb(172, 170, 170);
-    margin: 20px;
+.card-body{
+    background-color: #F2F2F2;
+    height: 15rem;
 }
-
-.tarjeta p{
-    color: black;
-    font-size: 1.5rem;
-    margin: 10px;
+.card-text{
+    font-size: 20px;
 }
-*/
-
 /*tienda*/
 .contenedor_tienda{
     display: flex;
