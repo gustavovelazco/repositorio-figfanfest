@@ -272,7 +272,10 @@ body{
 h1 .title{
     margin-bottom: 50px;
 }
-
+.card{
+    height: auto;
+    width:auto;
+}
 .card img{
     height: 400px;
     width: 400px;
@@ -286,37 +289,73 @@ h1 .title{
 }
 /*tienda*/
 
-.title-tienda h1{
-    background-color: #F21F0C;
-}
+
 .contenedor_tienda{
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:repeat(4, 1fr);
+    column-gap:30px ;
+    row-gap: 30px;
+    justify-items: center;
+    box-sizing: border-box;
 
 }
-.producto{
+.contenedor-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-color: #242426;
+    border: 2px;
+    border-radius: 30px;
     background-color: #F2F2F2;
-    border: 1px rgb(188, 188, 188) solid;
-    width: 300px;
-    height: auto;
-    margin: 20px;
+    width: 350px;
+    height: 650px;
+    margin: 10px;
+    border: 2px solid #242426;
     
 }
-.producto h2{
-    font-size: 1rem;
+.title-producto{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 30px;
+
 }
 .producto img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 .descripcion{
+    margin: 25px;
     color: black;
-    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border:1px;
+    border-color: #242426;
+
 }
 
 .marca{
     font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.button-compra{
+    background-color: #47A603;
+    color: #F2F2F2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    height: 40px;
+    width: auto;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+
 }
 
 .precio{
