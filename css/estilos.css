@@ -331,6 +331,25 @@ h1 .title{
 
 /*Contacto*/
 
+.titulo-form{
+    color: #242426;
+    text-align: center;
+    margin: 30px;
+}
+
+.form-register{
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+.form
+
+
+
+
+/*
 main{
     text-align: center;
 }
@@ -339,7 +358,7 @@ main{
     margin:10px auto;
 }
 .formulario form label input{
-    border-radius: 20px;
+    border-radius: 30px;
 }
 .contenedorInfo{
     background-color: rgb(212, 212, 212);
@@ -357,3 +376,4 @@ main{
     font-weight: 100;
     font-size: 1.5rem;
 }
+*/
