@@ -462,6 +462,7 @@ h1 .title{
     margin: auto;
     background-color: #F2F2F2;
     border-radius: 10px;
+    margin-bottom: 60px
 }
 .contenedor-inputs{
     padding: 10px 30px;
@@ -494,24 +495,62 @@ input{
 
 }
 
-.contenedor-info{
-    align-items: center;
+.contenedor-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
     text-align: center;
-    flex-direction: column;
-    width: 900px;
-    height: auto;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto; 
     background-color: #F2F2F2;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding: 50px;
     border-radius: 10px;
+    margin-bottom: 60px;
+}  
+.titulo{
+    font-size: 25px;
+    font-weight: 600;
 }
-.contenedor-info p{
-    font-size: 30px;
-    color: #242426;
+.info{
+    font-size: 20px;
 }
+.info-mapa{
+    height: 600px;
+    width: 600px;
+    border-radius: 10px;
+    
+}
+/*media queries de la info y el mapa*/
 
 @media (min-width:320px) and (max-width:768px){
-    .contenedor-info{
+    .contenedor-info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 30px;
+        text-align: center;
+        width:95%;
+        margin: 0 auto; 
+        background-color: #F2F2F2;
+        border-radius: 10px;
+        margin-bottom: 60px;
+    }  
+    .titulo{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .info{
+        font-size: 15px;
+    }
+    .info-mapa{
+        width: 250px;
+        height: 250px;
+
+    }
+}
+
+
+/*.contenedor-info{
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -530,5 +569,4 @@ input{
     .mapa{
         width: 320px;
         height: auto;
-    }
-}
+    } esto puede ser util despues*/
