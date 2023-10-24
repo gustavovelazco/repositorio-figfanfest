@@ -37,7 +37,7 @@ body{
 }
 
 
-.info{
+.info-index{
     max-width: 1400px;
     width: 100%;
     padding: 45px 20px;
@@ -46,15 +46,18 @@ body{
     color: #242426;
 }
 .titulo-index{
+    text-align: center;
     font-size: 3rem;
     font-weight: bold;
     color: #242426;
     margin: 60px;
 }
 .texto-principal{
+    text-align: center;
     font-size: 2rem;
     color: #242426;
 }
+
 /*media queries textos index*/
 @media  screen and (max-width:800px) {
     .titulo-index{
@@ -71,7 +74,7 @@ body{
         font-weight: 600;
     }
     .texto-principal{
-        font-size: 0.5rem;
+        font-size: 0.65rem;
     }
 }
 /*fin media queries textos index*/
@@ -212,7 +215,7 @@ body{
         height: 800px;
         grid-template-columns: repeat(1, 1fr);
         grid-gap:10px;
-        padding:200px 0px;
+        padding:80px 0px;
     }
 }
 @media screen and (max-width:800px){
@@ -244,7 +247,9 @@ body{
     border: 2.5px solid #F2B705;
 }
 
-
+.text-center h1{
+    font-size: 3rem;
+}
 .text-center p{
     font-size: 1.5rem;
 }
@@ -260,8 +265,6 @@ body{
     }
     
 }
-
-
 
 
 /*Partners*/
@@ -285,6 +288,8 @@ h1 .title{
 .card-text{
     font-size: 20px;
 }
+
+
 /*tienda*/
 
 .title-tienda{
@@ -358,7 +363,6 @@ h1 .title{
     margin-bottom: 10px;
     cursor: pointer;
 }
-
 /*media queries tienda*/
 
 @media (min-width:320px) and (max-width:768px){
@@ -371,7 +375,6 @@ h1 .title{
         column-gap:5px ;
         row-gap: 5px;
         justify-items: center;
-        box-sizing: border-box;
     }
     .contenedor-producto{
         display: flex;
@@ -399,7 +402,7 @@ h1 .title{
     }
     
 }
-@media (min-width:420px) and (max-width:1200px){
+@media (min-width:420px) and (max-width:768px){
     .contenedor_tienda{
         margin-top: 60px;
         margin-bottom: 60px;
@@ -433,6 +436,8 @@ h1 .title{
     }
     
 }
+
+
 /*Contacto*/
 
 .titulo{
@@ -490,37 +495,40 @@ input{
 }
 
 .contenedor-info{
-    
-}
-
-
-
-
-/*
-main{
+    align-items: center;
     text-align: center;
+    flex-direction: column;
+    width: 900px;
+    height: auto;
+    background-color: #F2F2F2;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+}
+.contenedor-info p{
+    font-size: 30px;
+    color: #242426;
 }
 
-.formulario form label{
-    margin:10px auto;
+@media (min-width:320px) and (max-width:768px){
+    .contenedor-info{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #F2F2F2;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding: 40px;
+    }
+    .contenedor-info p{
+        font-size: 15px;
+        
+    }
+    .titulo-contacto{
+        font-weight: 700;
+    }
+    .mapa{
+        width: 320px;
+        height: auto;
+    }
 }
-.formulario form label input{
-    border-radius: 30px;
-}
-.contenedorInfo{
-    background-color: rgb(212, 212, 212);
-    margin-bottom: 30px;
-}
-
-.titulo{
-    color: black;
-    font-weight: 500;
-    font-size: 2rem;
-}
-
-.info{
-    color: rgb(87, 87, 87);
-    font-weight: 100;
-    font-size: 1.5rem;
-}
-*/
