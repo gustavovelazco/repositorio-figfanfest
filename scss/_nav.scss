@@ -1,0 +1,16 @@
+.navbar{
+    background-color: $colorBlack;
+    .nav-link{
+        color: $mainColor;
+        font-size: $textMd;
+        font-weight: $fontLight;
+        &:hover{
+            color:$colorRed;
+            img{
+                width: 50%;
+                margin-left: 40px;
+            }
+        }
+    }
+}
+
