@@ -1,0 +1,77 @@
+
+header{
+    img{
+        width:100%
+    }
+}
+
+body{
+    background-color: $mainColor;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo{
+    align-items: center;
+    width: 200px;
+    height: auto;
+    
+}
+
+//footer
+.pie-pagina {
+    width: 100%;
+    height: auto;
+    background-color: #242426;
+    padding-top: 60px;
+}
+.grupo-1{
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:60px;
+    padding:20px 0px;
+        .box figure{
+            width: 100%;
+            height: 200px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+                img{
+                    width: 150px;
+                    height: 150px;
+                    align-items: center;
+                }
+        }
+}
+.pie-pagina .grupo-1 .box h3{
+    color:$mainColor;
+    margin-bottom: 25px;
+    font-size: $textMd;
+}
+.pie-pagina .grupo-1 .box p{
+    color:$colorwhite;
+    font-size: $textSm;
+}
+.pie-pagina .grupo-1 svg{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: $colorwhite;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+    &:hover{
+        color:$colorRed
+    }
+}
+.pie-pagina .grupo-2{
+    background-color: $colorBlack;
+    padding: 15px 10px ;
+    text-align: center;
+    color: #F2F2F2;
+    font-size: 15px;
+}
