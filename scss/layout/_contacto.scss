@@ -1,0 +1,109 @@
+.titulo-contacto{
+    font-size: $textXl;
+    color:$colorBlack;
+    text-align: center;
+    margin: 80px;
+}
+.form-titulo{
+    background-color: $colorGrenn;
+    color: $colorwhite;
+    padding: 20px;
+    text-align: center;
+    font-weight: $fontRegular;
+    font-size: $textMd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid $colorBlack;
+}
+.form-register{
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background-color: $colorwhite;
+    border-radius: 10px;
+    margin-bottom: 60px
+}
+.contenedor-inputs{
+    padding: 10px 30px;
+    @include flex-contacto(wrap,space-between);
+    input{
+        margin-bottom: 15px;
+        padding: 15px;
+        font-size: 15px;
+        
+    }
+}
+
+.input-48{
+    width: 48%;
+}
+.input-100{
+    width: 100%;
+}
+.btn-enviar:active{
+    transform: scale(1.05);
+}
+.btn-enviar{
+    width: 250px;
+    color: $colorwhite;
+    background-color: $colorBlack;;
+    margin: auto;
+    padding: 10px 40px;
+    border-radius: 7px;
+    cursor: pointer;
+    &:hover{
+        color: $colorRed;
+    }
+
+}
+
+.contenedor-info {
+    @include grid(repeat(2,1fr),none,none,none,30px,none,none);
+    text-align: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    background-color: $colorwhite;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}  
+.titulo{
+    font-size: 25px;
+    font-weight: 600;
+}
+.info{
+    font-size: 20px;
+}
+.info-mapa{
+    height: 600px;
+    width: 600px;
+    border-radius: 10px;
+    
+}
+
+@media (min-width:320px) and (max-width:768px){
+    .contenedor-info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 20px;
+        justify-content: center;
+        width:95%;
+        margin: 0 auto; 
+        background-color: $colorwhite;
+        border-radius: 10px;
+        margin-bottom: 60px;
+    }  
+    .titulo-contacto{
+        font-size: $textMd;
+        font-weight: 600;
+    }
+    .info{
+        font-size: 15px;
+    }
+    .info-mapa{
+        width: 250px;
+        height: 250px;
+
+    }
+}

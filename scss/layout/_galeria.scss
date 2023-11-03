@@ -1,0 +1,38 @@
+
+#galeria .col-lg-3{
+    margin: 0;
+    padding: 25px;
+}
+
+#galeria{
+    img{
+        width: 100%;
+        height: 100%;
+        &:hover{
+            border: 2.5px solid $mainColor;
+        }
+    }
+}
+.text-center h1{
+    font-size: $textXl;
+    font-weight: bold;;
+        p{
+        font-size: $textSm;
+    }
+}
+// media query galeria
+@media screen and (max-width:320px){
+    .text-center h1{
+        font-size: $textMd;
+        font-weight: $fontBold;
+        p{
+            font-size: $textXsm;
+        }
+    }
+}
+@media screen and (max-width:768px){
+    #galeria img{
+        width:100%;
+        height: 450px;
+    }
+}

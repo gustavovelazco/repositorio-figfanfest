@@ -1,0 +1,105 @@
+//tienda
+.title-tienda{
+    text-align: center;
+    font-size: $textXl;
+    font-weight: bold;
+    color: $colorBlack;
+    margin-top: 80px;
+}
+.contenedor_tienda{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    @include grid(repeat(4,1fr),repeat(4,1fr),none,30px,30px,none,none);
+        justify-items:center;
+}
+.contenedor-producto{
+    @include flex-tienda(column,center,space-between);
+    border-color:$colorBlack;
+    border: 2px;
+    border-radius: 30px;
+    background-color: $colorWhiteX;
+    width: 350px;
+    height: 100%;
+    margin: 10px;
+    border: 2px solid $colorBlack;
+}
+.title-producto{
+    color:$colorBlack;
+    font-size: $textMd;
+    font-weight:$fontBold;
+    text-align: center;
+    padding: 30px;
+}
+.imagenProducto{
+    width: 300px;
+    height: 300px;
+}
+
+.descripcion{
+    margin: 25px;
+    color:$colorBlack;
+    font-size: $textXsm;
+    font-weight: $fontBold;
+    text-align: center;
+    border:1px;
+    border-color: $colorBlack;
+
+}
+
+.marca{
+    font-size: $textMd;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.button-compra{
+    background-color: $colorGrenn;
+    color: $colorwhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:hover{
+        color: $colorBlack;
+    }
+}
+
+/*media queries tienda*/
+
+@media (min-width:320px) and (max-width:768px){
+    .contenedor_tienda{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows:repeat(4, 1fr);
+        column-gap:5px ;
+        row-gap: 5px;
+        justify-items: center;
+    }
+    .contenedor-producto{
+        @include flex-tienda(column,center,space-between);
+        border-color: $colorBlack;
+        border: 2px;
+        border-radius: 30px;
+        background-color: $colorwhite;
+        width: 300px;
+        height: 580px;
+        margin: 10px;
+        border: 2px solid $colorBlack;
+    }
+    .imagenProducto{
+        width: 250px;
+        height: 250px;
+    }
+    .title-tienda{
+        text-align: center;
+        font-size: $textMd;
+        color: $colorBlack;
+        margin-top: 30px;
+    }
+    
+}

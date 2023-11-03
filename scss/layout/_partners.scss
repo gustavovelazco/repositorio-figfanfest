@@ -1,0 +1,30 @@
+//pagina partners
+.title{
+    font-size: $textXl;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.card{
+    height: 100%;
+    background-color: $colorBlack;
+    color:$colorwhite;
+    text-align: center;
+}
+.card-title{
+    font-size: 30px;
+    color: $colorwhite;
+    font-weight: 600;
+}
+.btn{
+    width: 250px;
+    margin-bottom: 20px;
+    &:hover{
+        color: $colorRed;
+    }
+}
+@media (min-width:320px) and (max-width:768px){
+    .title{
+        font-size: $textMd;
+    }
+}

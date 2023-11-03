@@ -1,0 +1,23 @@
+@mixin grid($col,$row,$gap,$cgap,$rgap,$cstart,$rstart){
+    display:grid;
+    grid-template-columns:$col;
+    grid-template-rows:$row;
+    grid-gap: $gap;
+    column-gap:$cgap;
+    row-gap: $rgap;
+    grid-column-start:$cstart;
+    grid-row-start:$rstart;
+}
+
+@mixin flex-tienda($fdir,$aitems,$jcontent){
+    display:flex;
+    flex-direction:$fdir;
+    align-items:$aitems;
+    justify-content:$jcontent;
+}
+
+@mixin flex-contacto($wrap,$jcontent){
+    display: flex;
+    flex-wrap:$wrap;
+    justify-content:$jcontent;
+}
