@@ -6,10 +6,10 @@
     color: $colorBlack;
     margin-top: 80px;
 }
-.contenedor_tienda{
+.contenedor-tienda{
     margin-top: 80px;
     margin-bottom: 80px;
-    @include grid(repeat(4,1fr),repeat(4,1fr),none,30px,30px,none,none);
+    @include grid(repeat(4,1fr),repeat(4,1fr),none,20px,20px,none,none);
         justify-items:center;
 }
 .contenedor-producto{
@@ -38,7 +38,7 @@
 .descripcion{
     margin: 25px;
     color:$colorBlack;
-    font-size: $textXsm;
+    font-size: $textSm;
     font-weight: $fontBold;
     text-align: center;
     border:1px;
@@ -69,14 +69,13 @@
 
 /*media queries tienda*/
 
-@media (min-width:320px) and (max-width:768px){
-    .contenedor_tienda{
+@media (min-width:340px) and (max-width:768px){
+    .contenedor-tienda{
         margin-top: 60px;
         margin-bottom: 60px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows:repeat(4, 1fr);
-        column-gap:5px ;
+        grid-template-rows:repeat(1, 1fr);
         row-gap: 5px;
         justify-items: center;
     }

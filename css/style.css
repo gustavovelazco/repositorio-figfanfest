@@ -72,8 +72,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 250px;
-  grid-gap: none;
-  column-gap: none;
+  grid-gap: 20px;
+  column-gap: 20px;
   row-gap: 20px;
   grid-column-start: none;
   grid-row-start: none;
@@ -197,7 +197,7 @@ body {
 @media screen and (max-width: 768px) {
   .pie-pagina .grupo-1 {
     width: 70%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 60px;
     padding: 80px 0px;
   }
@@ -256,7 +256,7 @@ body {
   font-size: 0.8em;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 340px) {
   .text-center h1 {
     font-size: 1em;
     font-weight: 600;
@@ -312,15 +312,15 @@ body {
   margin-top: 80px;
 }
 
-.contenedor_tienda {
+.contenedor-tienda {
   margin-top: 80px;
   margin-bottom: 80px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-gap: none;
-  column-gap: 30px;
-  row-gap: 30px;
+  column-gap: 20px;
+  row-gap: 20px;
   grid-column-start: none;
   grid-row-start: none;
   justify-items: center;
@@ -357,7 +357,7 @@ body {
 .descripcion {
   margin: 25px;
   color: #242426;
-  font-size: 0.6em;
+  font-size: 0.8em;
   font-weight: 600;
   text-align: center;
   border: 1px;
@@ -387,14 +387,13 @@ body {
 }
 
 /*media queries tienda*/
-@media (min-width: 320px) and (max-width: 768px) {
-  .contenedor_tienda {
+@media (min-width: 340px) and (max-width: 768px) {
+  .contenedor-tienda {
     margin-top: 60px;
     margin-bottom: 60px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    column-gap: 5px;
+    grid-template-rows: repeat(1, 1fr);
     row-gap: 5px;
     justify-items: center;
   }
